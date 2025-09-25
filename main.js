@@ -71,7 +71,7 @@ while (n <= 1) {
   n = +prompt("Donner un entier: ");
 }
 
-console.log(`The premier numbers until ${n}:`);
+console.log(`Les premier nombres jusqu'à ${n}:`);
 
 for (let i = 2; i < n; i++) {
   let check = false;
@@ -95,7 +95,9 @@ let base = +prompt("Donner le base: ");
 let exposant = +prompt("Donner l'exposant: ");
 
 while (exposant < 0) {
-  exposant = +prompt("L'exposant should be bigger than 0, Donner un autre: ");
+  exposant = +prompt(
+    "L'exposant devrait être plus grand que 0, Donner un autre: "
+  );
 }
 
 console.log(`${base}^${exposant} = ${Math.pow(base, exposant)} `);
